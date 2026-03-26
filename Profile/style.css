@@ -1,3 +1,15 @@
+#navbar {
+    background-color:white; /* Dark blue navbar */
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 1 em ;
+    z-index: 1000;
+}
 /* General styles */
 body {
     font-family: Arial, sans-serif;
@@ -8,7 +20,7 @@ body {
 }
 
 /* Header styling */
-#main-header {
+.main-header {
     background-color: #0033a0; /* Dark blue header */
     color: white;
     text-align: center;
@@ -16,7 +28,7 @@ body {
 }
 
 .title {
-    margin: 0;
+    margin: 20px 0 10px;
     font-size: 2em;
 }
 
@@ -31,6 +43,12 @@ body {
     border-radius: 5px;
     padding: 15px 20px;
     margin: 15px 0;
+}
+
+.section-box p {
+    line-height: 1.6;
+    text-align: justify;
+    width: 70%;
 }
 
 .section-title {
@@ -77,10 +95,26 @@ body {
 }
 
 /* Footer styling */
-#main-footer {
+.main-footer {
     text-align: center;
     padding: 15px 0;
     background-color: red;
     color: white;
     margin-top: 20px;
+}
+
+/* Table styling */
+#experience-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#experience-table, #experience-table th, #experience-table td {
+    border: 1px solid #0033a0;
+}
+
+#experience-table th, #experience-table td {
+    padding: 10px;
+    text-align: left;
 }
